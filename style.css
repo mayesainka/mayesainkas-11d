@@ -1,0 +1,362 @@
+body {
+    /* Abu-abu gelap yang tenang */
+    background-color: #f2f4f5; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333d42;
+    margin: 20px;
+}
+
+h1 {
+    /* Abu-abu arang (Charcoal) */
+    color: #2c3e50;
+    text-align: center;
+}
+
+h2 {
+    /* Abu-abu kebiruan (Slate) */
+    color: #546e7a;
+    text-align: left;
+}
+
+p {
+    font-size: 18px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.daftar-produk {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.produk {
+    /* Abu-abu terang bersih */
+    background-color: #ffffff;
+    border: 1px solid #d1d8db;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.produk img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.produk h2 {
+    font-size: 20px;
+    color: #455a64;
+}
+
+.produk h3 {
+    font-size: 16px;
+    color: #607d8b;
+}
+
+.harga {
+    font-weight: bold;
+    /* Hijau abu-abu agar tetap kontras tapi lembut */
+    color: #4f6f52;
+}
+
+.deskripsi {
+    font-size: 14px;
+    color: #78909c;
+}
+
+.artikel {
+    max-width: 700px;
+    margin: auto;
+    padding: 30px;
+    background-color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.8;
+    border: 1px solid #eceff1;
+    border-radius: 8px;
+}
+
+.artikel .penulis {
+    font-style: italic;
+    color: #90a4ae;
+    margin-bottom: 20px;
+}
+
+.artikel .sampul {
+    width: 180px;
+    float: right;
+    margin: 0 0 20px 20px;
+    border: 1px solid #cfd8dc;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.artikel blockquote {
+    font-style: italic;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-left: 4px solid #b0bec5;
+    color: #546e7a;
+    background-color: #f8f9fa;
+}
+
+.btn-kembali {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    /* Tombol abu-abu gelap agar terlihat premium */
+    background-color: #455a64;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.btn-kembali:hover {
+    background-color: #263238;
+}
+
+.formulir {
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eceff1;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #455a64;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #cfd8dc;
+    background-color: #fcfdfe;
+}
+
+form button {
+    background-color: #607d8b;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #455a64;
+}
+
+.gambar-atas{
+    width: 100%;
+    height: auto;
+    max-width: 3000px;
+    display: block;
+    margin: 0 auto 20px;
+}
+/* Pengaturan Umum */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Navigasi */
+nav {
+    background-color: #2c3e50;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+nav a:hover {
+    color: #e67e22;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    padding: 40px 0;
+    margin: 0;
+    background-color: #fff;
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1000&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.btn-cta {
+    display: inline-block;
+    background-color: #e67e22;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Features */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background: white;
+    text-align: center;
+}
+
+.feature-item {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: white;
+    margin-top: 40px;
+}
+/* Header Khusus Halaman */
+.page-header {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+/* Container Event */
+.event-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Kartu Event */
+.event-card {
+    display: flex;
+    background: white;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Kotak Tanggal */
+.event-date {
+    background-color: #e67e22;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 80px;
+}
+
+.event-date .day {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.event-date .month {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+/* Konten Event */
+.event-content {
+    padding: 20px;
+}
+
+.event-content h3 {
+    margin: 0 0 10px 0;
+    color: #2c3e50;
+}
+
+.event-time {
+    color: #e67e22;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.event-content p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Tombol Daftar */
+.btn-regis {
+    display: inline-block;
+    padding: 8px 15px;
+    border: 2px solid #e67e22;
+    color: #e67e22;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-regis:hover {
+    background-color: #e67e22;
+    color: white;
+}
+
+/* Responsif Mobile */
+@media (max-width: 600px) {
+    .event-card {
+        flex-direction: column;
+    }
+    .event-date {
+        flex-direction: row;
+        gap: 10px;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <title>bedah buku</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="index.html">beranda</a>
+                <a href="produk.html">produk</a>
+                <a href="bedah-buku.html">bedah buku</a>
+                <a href="testimoni.html">testimoni</a>
+                <a href="tampil-testimoni.html">testimoni pembeli</a>
+                <a href="kontak.html">kontak</a>
+                <a href="event.html">event</a>
+            </nav>  
+        </header>
+
+        <main class="formulir">
+            <h2>testimoni-testimoni pembeli</h2>
+            <div id="daftarTestimoni"></div>
+            <button id="hapusSemua">hapus semua testimoni</button>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 toko buku mayesa</p>
+        </footer> 
+
+        <script>
+            const container = document.getElementById('daftarTestimoni');
+            
+            // Memperbaiki deklarasi variabel testimoniList (tadi ada variabel 'container' yang menempel)
+            const testimoniList = JSON.parse(localStorage.getItem('testimoniList')) || [];
+
+            if (testimoniList.length === 0) {
+                container.innerHTML = "<p>belum ada testimoni.</p>";
+            } else {
+                testimoniList.forEach((t, i) => {
+                    const el = document.createElement('div');
+                    el.className = 'testimoni-box';
+                    el.innerHTML = `
+                        <p><strong>nama:</strong> ${t.nama}</p>
+                        <p><strong>email:</strong> ${t.email}</p>
+                        <p><strong>asal:</strong> ${t.asal}</p>
+                        <p><strong>komunitas:</strong> ${t.komunitas}</p>
+                        <p><strong>judul:</strong> ${t.judul}</p>
+                        <p><strong>rating:</strong> ${t.rating}</p>
+                        <p><strong>pesan:</strong> ${t.pesan}</p>
+                        <hr> 
+                    `;
+                    container.appendChild(el);
+                });
+            }
+
+            document.getElementById("hapusSemua").addEventListener("click", function() {
+                const konfirmasi = confirm("apakah anda yakin ingin menghapus semua testimoni?");
+                if (konfirmasi) {
+                    localStorage.removeItem("testimoniList");
+                    location.reload();
+                }
+            });
+        </script>
+    </body> </html>
